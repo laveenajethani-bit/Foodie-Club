@@ -12,11 +12,11 @@ https://www.figma.com/design/XtAXWAMzDEQo0iJD2U9lXG/Foodie-Club--Food-Delivery-A
 Working Prototype:
 https://www.figma.com/proto/XtAXWAMzDEQo0iJD2U9lXG/Foodie-Club--Food-Delivery-App?node-id=1-2&p=f&t=cWGS4vF7R3Zi0T08-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2
 
-Credits & Contributors
+**Credits & Contributors**
 
 A huge shoutout to the entire team — Laveena, Meenal, and Rahul — for their collaboration, creativity, and dedication in bringing the Foodie Club website and mobile app prototype to life.
 
-1. Web Development (HTML, CSS & Bootstrap 5)
+**1. Web Development (HTML, CSS & Bootstrap 5)**
 
 Laveena
 
@@ -43,7 +43,7 @@ Rahul
 
 - Developed the collapsible Login section using Bootstrap's Collapse component.
 
-2. UI/UX Design & Prototyping (Figma – Foodie Club App)
+**2. UI/UX Design & Prototyping (Figma – Foodie Club App)**
 
 Laveena
 
@@ -63,8 +63,8 @@ Rahul
 - Designed Screens 5 & 6 (Restaurant Menu and Item Details).
 - Selected the colour palette and food images for Screens 5–6.
 - Developed the interactive Figma prototype.
-
-3. Frameworks, Tools & Media
+  
+**3. Frameworks, Tools & Media**
 
 - HTML5 – Website structure and content.
 - CSS3 – Custom styling and visual enhancements.
