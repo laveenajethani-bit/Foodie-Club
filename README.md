@@ -1,6 +1,10 @@
 # Foodie-Club
 Food Delivery website and Figma design project
 
+## Link
+Click on the link below to visit site:
+https://laveenajethani-bit.github.io/Foodie-Club/
+
 ## Credits & Contributors
 
 A huge shoutout to the entire team—Laveena, Meenal, and Rahul—for their strong collaboration, creativity, and dedication in bringing both the website and mobile app prototype together.
