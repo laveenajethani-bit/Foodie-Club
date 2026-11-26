@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodie Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff8f0;
+        }
+        .navbar {
+            background-color: #ff6b35;
+        }
+        .heading {
+            color: #ff6b35;
+        }
+        .food-card {
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+        .food-card:hover {
+            transform: scale(1.03);
+        }
+        .food-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .order-btn {
+            background-color: #ff6b35;
+            color: white;
+        }
+        .order-btn:hover {
+            background-color: #e85420;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">🍔 Foodie Club</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#restaurants">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Food Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#offers">Offers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#loginForm" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="loginForm">Login</a>
+            </li>
+     </ul>
+</nav>
+<div class="collapse" id="loginForm">
+    <div class="container py-4">
+        <div class="card shadow mx-auto" style="max-width:420px; border-radius:15px;">
+            <div class="card-body">
+                <h4 class="heading text-center fw-bold mb-3">Login</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail"
+                               placeholder="abc@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword"
+                               placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn order-btn w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center my-5">
+    <h1 class="heading fw-bold">Welcome to Foodie Club!</h1>
+    <p>Delicious food, great taste, happy moments.</p>
+</div>
+<div class="container">
+    <label for="exampleDataList" class="form-label">Search for a dish or restaurant</label>
+    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search for a dish or restaurant">
+    <datalist id="datalistOptions">
+        <option value="Pizza Palace">
+        <option value="Biryani House">
+        <option value="Margherita pizza">
+        <option value="Farmhouse pizza">
+        <option value="Garlic bread">
+    </datalist>
+</div>
+<div class="container my-4" id="offers">
+    <button type="button" class="btn btn-primary">All</button>
+    <button type="button" class="btn btn-secondary">Fast Food</button>
+    <button type="button" class="btn btn-success">Veg</button>
+    <button type="button" class="btn btn-danger">Non-Veg</button>
+    <button type="button" class="btn btn-warning">Healthy</button>
+    <button type="button" class="btn btn-info">Dessert</button>
+    <button type="button" class="btn btn-light">Drinks</button>
+    <button type="button" class="btn btn-dark">Top Rated</button>
+    <button type="button" class="btn btn-link">More</button>
+</div>
+<div class="container-fluid py-4" id="restaurants">
+    <h2 class="text-center heading mb-4">Popular Restaurants</h2>
+    <div class="d-flex flex-nowrap overflow-auto gap-3">
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Foodies place">
+            <div class="card-body">
+                <h5 class="card-title">Foodies place</h5>
+                <p class="card-text">4.5 rating · Italian, Pizza · 30 min, Rs 400 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Hungry Birds">
+            <div class="card-body">
+                <h5 class="card-title">Hungry Birds</h5>
+                <p class="card-text">4.2 rating · Biryani · 35 min, Rs 500 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Burger Barn">
+            <div class="card-body">
+                <h5 class="card-title">Burger Barn</h5>
+                <p class="card-text">4.4 rating · Burgers · 25 min, Rs 350 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Sweet Treat Corner">
+            <div class="card-body">
+                <h5 class="card-title">Sweet Treat Corner</h5>
+                <p class="card-text">4.6 rating · Desserts · 20 min, Rs 250 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Tandoori Flames">
+            <div class="card-body">
+                <h5 class="card-title">Tandoori Flames</h5>
+                <p class="card-text">4.3 rating · North Indian · 30 min, Rs 450 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Wok and Roll">
+            <div class="card-body">
+                <h5 class="card-title">Wok & Roll</h5>
+                <p class="card-text">4.1 rating · Asian, Noodles · 28 min, Rs 380 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Dosa Plaza">
+            <div class="card-body">
+                <h5 class="card-title">Dosa Plaza</h5>
+                <p class="card-text">4.5 rating · South Indian · 25 min, Rs 300 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cafe Brew">
+            <div class="card-body">
+                <h5 class="card-title">Cafe Brew</h5>
+                <p class="card-text">4.4 rating · Coffee, Snacks · 20 min, Rs 280 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+        <div class="card food-card shadow" style="width:18rem;flex:0 0 auto;">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Roll Express">
+            <div class="card-body">
+                <h5 class="card-title">Roll Express</h5>
+                <p class="card-text">4.2 rating · Rolls, Wraps · 22 min, Rs 260 for two</p>
+                <a href="#menu" class="btn order-btn">View Menu</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5" id="menu">
+    <h2 class="text-center heading mb-4">Our Food Menu</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card food-card shadow h-100">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Burger">
+                <div class="card-body text-center">
+                    <h5>Burger</h5>
+                    <p>₹120</p>
+                    <input type="checkbox" class="food" data-price="120" value="Burger"> Select Item
+                    <input type="number" class="quantity form-control mt-2" value="1" min="1">
+                    <p class="text-muted small mt-3 mb-2">Juicy double patty burger with fresh lettuce and cheese.</p>
+                    <button type="button" class="btn order-btn w-100">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card food-card shadow h-100">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Pizza">
+                <div class="card-body text-center">
+                    <h5>Pizza</h5>
+                    <p>₹250</p>
+                    <input type="checkbox" class="food" data-price="250" value="Pizza"> Select Item
+                    <input type="number" class="quantity form-control mt-2" value="1" min="1">
+                    <p class="text-muted small mt-3 mb-2">Cheesy thin crust pizza baked with tomato sauce and herbs.</p>
+                    <button type="button" class="btn order-btn w-100">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card food-card shadow h-100">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Pasta">
+                <div class="card-body text-center">
+                    <h5>Pasta</h5>
+                    <p>₹180</p>
+                    <input type="checkbox" class="food" data-price="180" value="Pasta"> Select Item
+                    <input type="number" class="quantity form-control mt-2" value="1" min="1">
+                    <p class="text-muted small mt-3 mb-2">Creamy white sauce pasta with herbs and a hint of garlic.</p>
+                    <button type="button" class="btn order-btn w-100">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card food-card shadow h-100">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cold Coffee">
+                <div class="card-body text-center">
+                    <h5>Cold Coffee</h5>
+                    <p>₹90</p>
+                    <input type="checkbox" class="food" data-price="90" value="Cold Coffee"> Select Item
+                    <input type="number" class="quantity form-control mt-2" value="1" min="1">
+                    <p class="text-muted small mt-3 mb-2">Chilled creamy coffee blended with ice and a hint of chocolate.</p>
+                    <button type="button" class="btn order-btn w-100">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card food-card shadow h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUy-tj88AOrIJHNANIcKSFGa1WrLQmrkkmEZjUpI292Vx7lcmys3IlQrntsG04D5rol3BREwUsil6GXtQPfOb4AaZJ607nUFjesotzBomz&s=10" class="card-img-top" alt="Garlic Bread">
+                <div class="card-body text-center">
+                    <h5>Garlic Bread</h5>
+                    <p>₹110</p>
+                    <input type="checkbox" class="food" data-price="110" value="Garlic Bread"> Select Item
+                    <input type="number" class="quantity form-control mt-2" value="1" min="1">
+                    <p class="text-muted small mt-3 mb-2">Crispy garlic bread with butter, herbs and melted cheese.</p>
+                    <button type="button" class="btn order-btn w-100">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card food-card shadow h-100">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Margherita Pizza">
+                <div class="card-body text-center">
+                    <h5>Margherita Pizza</h5>
+                    <p>₹220</p>
+                    <input type="checkbox" class="food" data-price="220" value="Margherita Pizza"> Select Item
+                    <input type="number" class="quantity form-control mt-2" value="1" min="1">
+                    <p class="text-muted small mt-3 mb-2">Classic margherita pizza with tomato, mozzarella and basil.</p>
+                    <button type="button" class="btn order-btn w-100">Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5" id="order">
+    <div class="card shadow mx-auto" style="max-width:500px;">
+        <div class="card-header order-btn text-center">
+            <h4 class="mb-0">🛒 Your Order</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+                <span>Burger × 1</span>
+                <span>₹120</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <span>Pizza × 1</span>
+                <span>₹250</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <span>Cold Coffee × 2</span>
+                <span>₹180</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between fw-bold">
+                <span>Total Amount</span>
+                <span>₹550</span>
+            </li>
+        </ul>
+        <div class="card-body text-center">
+            <button type="button" class="btn order-btn btn-lg">Place Order</button>
+        </div>
+    </div>
+</div>
+<div class="container text-center mb-5">
+    <button type="button" class="btn btn-secondary btn-lg">Explore More</button>
+</div>
+<footer class="text-center text-white p-3" style="background-color:#ff6b35;">© 2026 FoodieHub | Made with ❤️</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
