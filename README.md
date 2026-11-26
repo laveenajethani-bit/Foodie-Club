@@ -3,7 +3,10 @@ Food Delivery website and Figma design project
 
 ## Link
 Click on the link below to visit site:
+Website:
 https://laveenajethani-bit.github.io/Foodie-Club/
+Figma Design:
+https://www.figma.com/design/XtAXWAMzDEQo0iJD2U9lXG/Foodie-Club--Food-Delivery-App?node-id=0-1&t=xZPrzp85miXNaw6U-1
 
 ## Credits & Contributors
 
